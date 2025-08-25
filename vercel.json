@@ -1,0 +1,82 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/services",
+      "destination": "/services.html"
+    },
+    {
+      "source": "/project-management-automation",
+      "destination": "/project-management-automation.html"
+    },
+    {
+      "source": "/business-process-automation", 
+      "destination": "/business-process-automation.html"
+    },
+    {
+      "source": "/accounting-automation",
+      "destination": "/accounting-automation.html"
+    },
+    {
+      "source": "/lead-generation-automation",
+      "destination": "/lead-generation-automation.html"
+    },
+    {
+      "source": "/ai-integration-automation",
+      "destination": "/ai-integration-automation.html"
+    },
+    {
+      "source": "/acworth",
+      "destination": "/acworth.html"
+    },
+    {
+      "source": "/alpharetta",
+      "destination": "/alpharetta.html"
+    },
+    {
+      "source": "/dunwoody",
+      "destination": "/dunwoody.html"
+    },
+    {
+      "source": "/johns-creek",
+      "destination": "/johns-creek.html"
+    },
+    {
+      "source": "/kennesaw",
+      "destination": "/kennesaw.html"
+    },
+    {
+      "source": "/marietta",
+      "destination": "/marietta.html"
+    },
+    {
+      "source": "/powder-springs",
+      "destination": "/powder-springs.html"
+    },
+    {
+      "source": "/roswell",
+      "destination": "/roswell.html"
+    },
+    {
+      "source": "/sandy-springs",
+      "destination": "/sandy-springs.html"
+    },
+    {
+      "source": "/smyrna",
+      "destination": "/smyrna.html"
+    },
+    {
+      "source": "/vinings",
+      "destination": "/vinings.html"
+    },
+    {
+      "source": "/woodstock",
+      "destination": "/woodstock.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
