@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automate accounting and financial processes for contractors. QuickBooks integration, automated invoicing, expense tracking, and payment processing for Metro Atlanta contractors.">
+    <title>Accounting Automation for Contractors | Fortress 5 Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Accounting Automation for Contractors",
+      "description": "Comprehensive accounting automation including QuickBooks integration, automated invoicing, expense tracking, and financial reporting for Metro Atlanta contractors.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Fortress 5 Consulting",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "252 Blair Place NW",
+          "addressLocality": "Marietta",
+          "addressRegion": "GA",
+          "postalCode": "30064",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-404-394-8558",
+        "email": "adam@fortress5consulting.com"
+      }
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: #333; background: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb; position: fixed; top: 0; width: 100%; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1f2937; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: #2563eb; }
+        .cta-btn { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: all 0.3s ease; }
+        
+        main { margin-top: 80px; padding: 3rem 0; }
+        .breadcrumb { margin-bottom: 2rem; color: #6b7280; font-size: 0.9rem; }
+        .breadcrumb a { color: #2563eb; text-decoration: none; }
+        
+        .page-hero { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 4rem 0; border-radius: 1rem; margin-bottom: 4rem; }
+        .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .hero-text h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 700; color: #1f2937; margin-bottom: 1.5rem; line-height: 1.2; }
+        .hero-text p { font-size: 1.25rem; color: #6b7280; margin-bottom: 2rem; }
+        .hero-features { list-style: none; }
+        .hero-features li { padding: 0.5rem 0; color: #4b5563; position: relative; padding-left: 2rem; font-weight: 500; }
+        .hero-features li:before { content: "💰"; position: absolute; left: 0; }
+        
+        .section { margin: 4rem 0; }
+        .section h2 { font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 2rem; text-align: center; }
+        .section h3 { font-size: 1.75rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem 0; }
+        .section p { font-size: 1.1rem; color: #4b5563; margin-bottom: 1.5rem; line-height: 1.7; }
+        
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin: 3rem 0; }
+        .feature-card { background: white; padding: 3rem; border-radius: 1rem; border: 1px solid #e5e7eb; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .feature-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+        .feature-icon { width: 4rem; height: 4rem; background: linear-gradient(135deg, #10b981, #059669); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; font-size: 2rem; color: white; }
+        .feature-card h3 { font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem; }
+        .feature-card p { color: #6b7280; margin-bottom: 1.5rem; }
+        
+        .feature-benefits { list-style: none; }
+        .feature-benefits li { padding: 0.5rem 0; color: #4b5563; position: relative; padding-left: 1.5rem; }
+        .feature-benefits li:before { content: "✓"; color: #10b981; font-weight: bold; position: absolute; left: 0; }
+        
+        .quickbooks-section { background: linear-gradient(135deg, #f0f9ff, #dbeafe); padding: 4rem 0; border-radius: 1rem; margin: 4rem 0; }
+        .quickbooks-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .quickbooks-logo { font-size: 3rem; font-weight: 700; color: #2563eb; text-align: center; }
+        
+        .roi-section { margin: 4rem 0; }
+        .roi-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .roi-card { background: white; padding: 2rem; border-radius: 1rem; border: 1px solid #e5e7eb; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .roi-number { font-size: 3rem; font-weight: 700; color: #10b981; }
+        .roi-label { color: #6b7280; font-weight: 500; margin-bottom: 0.5rem; }
+        .roi-description { color: #4b5563; font-size: 0.9rem; }
+        
+        .integration-section { background: #f8fafc; padding: 4rem 0; border-radius: 1rem; }
+        .integration-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .integration-item { background: white; padding: 2rem; border-radius: 1rem; text-align: center; border: 1px solid #e5e7eb; }
+        .integration-icon { font-size: 2rem; margin-bottom: 1rem; }
+        
+        .related-services { margin: 4rem 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .related-item { background: white; padding: 2rem; border-radius: 1rem; border: 1px solid #e5e7eb; text-align: center; transition: all 0.3s ease; }
+        .related-item:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .related-item a { text-decoration: none; color: #2563eb; font-weight: 600; }
+        
+        .cta-section { background: linear-gradient(135deg, #1f2937, #374151); color: white; padding: 4rem 2rem; border-radius: 1rem; text-align: center; margin: 4rem 0; }
+        .btn-primary { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block; margin-top: 1rem; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4); }
+        
+        @media (max-width: 768px) { 
+            .nav-links { display: none; } 
+            .hero-content, .quickbooks-content { grid-template-columns: 1fr; gap: 2rem; }
+            .features-grid, .roi-cards, .integration-grid, .related-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Fortress 5 Consulting</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/#industries">Industries</a></li>
+                <li><a href="/service-areas/">Service Areas</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="/#contact" class="cta-btn">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a> > <a href="/services/">Services</a> > Accounting Automation
+            </div>
+
+            <div class="page-hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Accounting Automation for Contractors</h1>
+                        <p>Streamline your financial operations with automated invoicing, expense tracking, and seamless QuickBooks integration that saves time and improves cash flow.</p>
+                        <ul class="hero-features">
+                            <li>Automated invoice generation and delivery</li>
+                            <li>Real-time expense tracking and categorization</li>
+                            <li>Seamless QuickBooks integration</li>
+                            <li>Automated payment processing and follow-up</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Get Free Financial Assessment</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; text-align: center;">
+                            <div style="font-size: 3rem; font-weight: 700; color: #10b981;">75%</div>
+                            <div style="color: #6b7280;">Faster Invoice Processing</div>
+                            <div style="font-size: 3rem; font-weight: 700; color: #10b981; margin-top: 1rem;">90%</div>
+                            <div style="color: #6b7280;">Reduction in Data Entry</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Complete Financial Automation Solutions</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📄</div>
+                        <h3>Automated Invoicing</h3>
+                        <p>Generate and send professional invoices automatically based on completed work orders, with customizable templates and payment terms.</p>
+                        <ul class="feature-benefits">
+                            <li>Instant invoice generation from work orders</li>
+                            <li>Professional, branded invoice templates</li>
+                            <li>Automated delivery via email or customer portal</li>
+                            <li>Multiple payment options integration</li>
+                            <li>Automatic late payment reminders</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h3>Expense Management</h3>
+                        <p>Capture, categorize, and track all business expenses automatically with receipt scanning and mileage tracking integration.</p>
+                        <ul class="feature-benefits">
+                            <li>Receipt scanning and digital storage</li>
+                            <li>Automatic expense categorization</li>
+                            <li>Mileage tracking and calculation</li>
+                            <li>Credit card and bank account integration</li>
+                            <li>Real-time expense reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Payment Processing</h3>
+                        <p>Accept payments online, track payment status, and automate follow-up for overdue accounts to improve cash flow.</p>
+                        <ul class="feature-benefits">
+                            <li>Online payment portal for customers</li>
+                            <li>Credit card and ACH payment processing</li>
+                            <li>Automated payment confirmations</li>
+                            <li>Overdue account management</li>
+                            <li>Payment plan automation</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Financial Reporting</h3>
+                        <p>Get real-time insights into your business performance with automated reports and financial dashboards.</p>
+                        <ul class="feature-benefits">
+                            <li>Automated P&L and cash flow statements</li>
+                            <li>Job profitability analysis</li>
+                            <li>Tax preparation ready reports</li>
+                            <li>Customer payment history tracking</li>
+                            <li>Customizable financial dashboards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quickbooks-section">
+                <div class="container">
+                    <div class="quickbooks-content">
+                        <div>
+                            <h2>Certified QuickBooks Integration</h2>
+                            <p>As QuickBooks certified consultants, we ensure seamless integration with your existing accounting system, eliminating double data entry and maintaining accurate financial records.</p>
+                            <ul class="feature-benefits" style="margin-top: 1.5rem;">
+                                <li>Two-way data synchronization</li>
+                                <li>Automated chart of accounts mapping</li>
+                                <li>Real-time financial data updates</li>
+                                <li>Backup and data security protocols</li>
+                                <li>Multi-user access and permissions</li>
+                            </ul>
+                        </div>
+                        <div class="quickbooks-logo">
+                            QuickBooks<br>Certified<br>Partner
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roi-section">
+                <h2>Financial Impact & ROI</h2>
+                <div class="roi-cards">
+                    <div class="roi-card">
+                        <div class="roi-number">15</div>
+                        <div class="roi-label">Days Faster</div>
+                        <div class="roi-description">Average payment collection time</div>
+                    </div>
+                    <div class="roi-card">
+                        <div class="roi-number">30</div>
+                        <div class="roi-label">Hours Saved</div>
+                        <div class="roi-description">Monthly administrative time reduction</div>
+                    </div>
+                    <div class="roi-card">
+                        <div class="roi-number">25%</div>
+                        <div class="roi-label">Cash Flow</div>
+                        <div class="roi-description">Improvement in working capital</div>
+                    </div>
+                    <div class="roi-card">
+                        <div class="roi-number">95%</div>
+                        <div class="roi-label">Accuracy Rate</div>
+                        <div class="roi-description">Reduction in billing errors</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="integration-section">
+                <div class="container">
+                    <h2>Seamless Integration Ecosystem</h2>
+                    <div class="integration-grid">
+                        <div class="integration-item">
+                            <div class="integration-icon">📱</div>
+                            <h4>Field Service Apps</h4>
+                            <p>Connect work orders to invoicing</p>
+                        </div>
+                        <div class="integration-item">
+                            <div class="integration-icon">🏦</div>
+                            <h4>Banking Platforms</h4>
+                            <p>Automatic transaction import</p>
+                        </div>
+                        <div class="integration-item">
+                            <div class="integration-icon">💳</div>
+                            <h4>Payment Processors</h4>
+                            <p>Stripe, Square, PayPal integration</p>
+                        </div>
+                        <div class="integration-item">
+                            <div class="integration-icon">📧</div>
+                            <h4>Email Systems</h4>
+                            <p>Automated invoice delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-services">
+                <h3>Complementary Automation Services</h3>
+                <p>Accounting automation works best when integrated with our other automation solutions:</p>
+                <div class="related-grid">
+                    <div class="related-item">
+                        <h4><a href="/project-management-automation/">Project Management</a></h4>
+                        <p>Link project costs to invoicing</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/business-process-automation/">Process Automation</a></h4>
+                        <p>Streamline work order to invoice flow</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/lead-generation-automation/">Lead Generation</a></h4>
+                        <p>Track lead acquisition costs</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/ai-integration-automation/">AI Integration</a></h4>
+                        <p>Predictive cash flow analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Automate Your Accounting?</h2>
+                <p>Join Metro Atlanta contractors who have improved cash flow, reduced administrative work, and gained better financial visibility with our accounting automation solutions.</p>
+                <a href="/#contact" class="btn-primary">Schedule Free Financial Assessment</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fortress 5 Consulting helps Metro Atlanta contractors grow with custom business automation, QuickBooks integration, and AI workflows. HVAC, plumbing, electrical & more.">
+    <title>Fortress 5 Consulting | Business Automation for Metro Atlanta Contractors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Comprehensive Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Fortress 5 Consulting",
+      "image": "https://fortress5consulting.com/logo.jpg",
+      "description": "Business automation specialists for Metro Atlanta contractors. We help HVAC, electrical, plumbing, and construction companies streamline operations with custom automation solutions, QuickBooks integration, and AI workflows.",
+      "url": "https://fortress5consulting.com",
+      "telephone": "+1-404-394-8558",
+      "email": "adam@fortress5consulting.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "252 Blair Place NW",
+        "addressLocality": "Marietta",
+        "addressRegion": "GA",
+        "postalCode": "30064",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "33.9526",
+        "longitude": "-84.5499"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Marietta",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City", 
+          "name": "Kennesaw",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Alpharetta", 
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Roswell",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Woodstock",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Acworth",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Smyrna",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Sandy Springs",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Dunwoody",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "City",
+          "name": "Johns Creek",
+          "addressRegion": "GA",
+          "addressCountry": "US"
+        }
+      ],
+      "serviceType": [
+        "Business Process Automation",
+        "QuickBooks Integration", 
+        "Lead Generation Automation",
+        "AI Workflow Consulting",
+        "HVAC Business Automation",
+        "Electrical Contractor Automation",
+        "Plumbing Business Automation",
+        "Construction Business Automation"
+      ],
+      "priceRange": "$$",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "foundingDate": "2023",
+      "founder": {
+        "@type": "Person",
+        "name": "Fortress 5 Team"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating", 
+        "ratingValue": "4.9",
+        "reviewCount": "27",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/fortress5consulting",
+        "https://www.facebook.com/fortress5consulting"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Business Automation Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HVAC Business Automation",
+              "description": "Automate HVAC scheduling, dispatching, invoicing, and customer follow-up systems"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Contractor Automation",
+              "description": "Automate electrical business operations including project estimates and permit tracking"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Plumbing Business Automation",
+              "description": "Automate plumbing operations including emergency dispatch and parts ordering"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "QuickBooks Integration",
+              "description": "Seamless financial automation and reporting integration"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e7eb;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+        
+        .cta-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 4rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin-top: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #374151;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            transform: translateY(-2px);
+        }
+        
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .service-link:hover {
+            color: #1d4ed8;
+        }
+        
+        /* Industries Section */
+        .industries {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+        
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .industry-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .industry-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .industry-item .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .industry-item h4 {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .industry-item h4 a {
+            color: #1f2937;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .industry-item h4 a:hover {
+            color: #2563eb;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #1f2937, #374151);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            display: grid;
+            gap: 0.5rem;
+        }
+        
+        .form-group label {
+            font-weight: 500;
+            text-align: left;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            background: white;
+            color: #1f2937;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 1rem;
+            margin-top: 2rem;
+            color: #9ca3af;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .industries-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Fortress 5 Consulting</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="/service-areas">Service Areas</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-btn">Get Started</a>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero" itemscope itemtype="https://schema.org/Service">
+        <div class="container">
+            <div class="hero-content">
+                <h1 itemprop="name">Automate Your Contracting Business & Focus on Growth</h1>
+                <p class="subtitle" itemprop="description">We help Metro Atlanta contractors streamline operations with custom automation solutions. From lead generation to invoicing, we eliminate bottlenecks so you can scale profitably.</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-primary">Get Free Automation Assessment</a>
+                    <a href="#services" class="btn-secondary">See Our Solutions</a>
+                </div>
+                <div class="trust-indicators">
+                    <span>✓ QuickBooks Certified</span>
+                    <span>✓ AI Workflow Experts</span>
+                    <span>✓ Metro Atlanta Focused</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transform Your Business Operations</h2>
+                <p>We don't just recommend tools — we design tailored automation systems that work for your unique processes.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">📋</div>
+                    <h3 itemprop="name">Project Management Automation</h3>
+                    <p itemprop="description">Streamline project workflows, coordinate trades, track progress, and manage timelines with automated project management systems designed for contractors.</p>
+                    <a href="/project-management-automation/" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card fade-in" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">⚙️</div>
+                    <h3 itemprop="name">Business Process & Task Automation</h3>
+                    <p itemprop="description">Eliminate repetitive tasks with custom workflows that handle scheduling, dispatching, customer communication, and administrative work automatically.</p>
+                    <a href="/business-process-automation/" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card fade-in" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">💰</div>
+                    <h3 itemprop="name">Accounting Automation</h3>
+                    <p itemprop="description">Automate invoicing, expense tracking, payment processing, and financial reporting with seamless QuickBooks integration and custom accounting workflows.</p>
+                    <a href="/accounting-automation/" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card fade-in" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">🎯</div>
+                    <h3 itemprop="name">Lead Generation & Follow-Up Automation</h3>
+                    <p itemprop="description">Never miss another lead with automated capture, qualification, nurturing sequences, and follow-up systems that convert prospects into customers faster.</p>
+                    <a href="/lead-generation-automation/" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card fade-in" itemscope itemtype="https://schema.org/Service">
+                    <div class="service-icon">🤖</div>
+                    <h3 itemprop="name">AI Integration & Smart Systems</h3>
+                    <p itemprop="description">Leverage cutting-edge AI for predictive scheduling, intelligent pricing, automated customer service, and smart decision-making systems.</p>
+                    <a href="/ai-integration-automation/" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Specialized Solutions for Your Trade</h2>
+                <p>Deep expertise across Metro Atlanta's most active contracting industries</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-item fade-in">
+                    <div class="icon">🔧</div>
+                    <h4><a href="/automate-hvac-business/">HVAC Companies</a></h4>
+                </div>
+                <div class="industry-item fade-in">
+                    <div class="icon">⚡</div>
+                    <h4><a href="/automate-electrical-business/">Electricians</a></h4>
+                </div>
+                <div class="industry-item fade-in">
+                    <div class="icon">🔨</div>
+                    <h4><a href="/automate-plumbing-business/">Plumbers</a></h4>
+                </div>
+                <div class="industry-item fade-in">
+                    <div class="icon">🏠</div>
+                    <h4><a href="/automate-flooring-business/">Flooring Specialists</a></h4>
+                </div>
+                <div class="industry-item fade-in">
+                    <div class="icon">🏡</div>
+                    <h4><a href="/automate-contractor-business/">Fence Installers</a></h4>
+                </div>
+                <div class="industry-item fade-in">
+                    <div class="icon">🌱</div>
+                    <h4><a href="/automate-lawn-care-business/">Lawn Care Providers</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2>Ready to Automate Your Success?</h2>
+            <p>Get a free consultation and discover how automation can transform your contracting business.</p>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="trade">Trade/Industry</label>
+                    <input type="text" id="trade" name="trade" placeholder="e.g., HVAC, Plumbing, Electrical">
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about your biggest operational challenge</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Get Free Consultation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fortress 5 Consulting</h4>
+                    <p>252 Blair Place NW<br>Marietta, GA 30064</p>
+                    <p>Phone: <a href="tel:+1-404-394-8558">(404) 394-8558</a></p>
+                    <p>Email: <a href="mailto:adam@fortress5consulting.com">adam@fortress5consulting.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Automation Services</h4>
+                    <p><a href="/automate-hvac-business/">HVAC Automation</a></p>
+                    <p><a href="/automate-electrical-business/">Electrical Automation</a></p>
+                    <p><a href="/automate-plumbing-business/">Plumbing Automation</a></p>
+                    <p><a href="/quickbooks-automation/">QuickBooks Integration</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <p><a href="/automate-business-marietta-ga/">Marietta</a></p>
+                    <p><a href="/automate-business-kennesaw-ga/">Kennesaw</a></p>
+                    <p><a href="/automate-business-alpharetta-ga/">Alpharetta</a></p>
+                    <p><a href="/service-areas/">All Service Areas</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fortress 5 Consulting. All rights reserved. | Serving Metro Atlanta, Cobb County, Fulton County</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission handler with structured data
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Track form submission for analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'Contact',
+                    'event_label': 'Free Consultation Request'
+                });
+            }
+            
+            // Here you would normally send to your backend
+            console.log('Form submitted:', data);
+            
+            // Show success message
+            alert('Thank you! We\'ll be in touch within 24 hours to schedule your free consultation.');
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
