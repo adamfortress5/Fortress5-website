@@ -1,0 +1,100 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/service-areas",
+      "destination": "/service-areas.html"
+    },
+    {
+      "source": "/project-management-automation/",
+      "destination": "/project-management-automation.html"
+    },
+    {
+      "source": "/business-process-automation/",
+      "destination": "/business-process-automation.html"
+    },
+    {
+      "source": "/accounting-automation/",
+      "destination": "/accounting-automation.html"
+    },
+    {
+      "source": "/lead-generation-automation/",
+      "destination": "/lead-generation-automation.html"
+    },
+    {
+      "source": "/ai-integration-automation/",
+      "destination": "/ai-integration-automation.html"
+    },
+    {
+      "source": "/automate-hvac-business/",
+      "destination": "/automate-hvac-business.html"
+    },
+    {
+      "source": "/automate-electrical-business/",
+      "destination": "/automate-electrical-business.html"
+    },
+    {
+      "source": "/automate-plumbing-business/",
+      "destination": "/automate-plumbing-business.html"
+    },
+    {
+      "source": "/automate-flooring-business/",
+      "destination": "/automate-flooring-business.html"
+    },
+    {
+      "source": "/automate-contractor-business/",
+      "destination": "/automate-contractor-business.html"
+    },
+    {
+      "source": "/automate-lawn-care-business/",
+      "destination": "/automate-lawn-care-business.html"
+    },
+    {
+      "source": "/quickbooks-automation/",
+      "destination": "/quickbooks-automation.html"
+    },
+    {
+      "source": "/automate-business-marietta-ga/",
+      "destination": "/automate-business-marietta-ga.html"
+    },
+    {
+      "source": "/automate-business-kennesaw-ga/",
+      "destination": "/automate-business-kennesaw-ga.html"
+    },
+    {
+      "source": "/automate-business-alpharetta-ga/",
+      "destination": "/automate-business-alpharetta-ga.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
