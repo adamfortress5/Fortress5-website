@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI integration and smart systems for contractors. Leverage cutting-edge AI for predictive scheduling, intelligent pricing, automated customer service, and smart decision-making systems.">
+    <title>AI Integration & Smart Systems for Contractors | Fortress 5 Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Comprehensive Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AI Integration & Smart Systems for Contractors",
+      "description": "Comprehensive AI integration including predictive scheduling, intelligent pricing, automated customer service, and smart decision-making systems for Metro Atlanta contractors.",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Fortress 5 Consulting",
+        "image": "https://fortress5consulting.com/logo.jpg",
+        "url": "https://fortress5consulting.com",
+        "telephone": "+1-404-394-8558",
+        "email": "adam@fortress5consulting.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "252 Blair Place NW",
+          "addressLocality": "Marietta",
+          "addressRegion": "GA",
+          "postalCode": "30064",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "33.9526",
+          "longitude": "-84.5499"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Marietta",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City", 
+            "name": "Kennesaw",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City",
+            "name": "Alpharetta", 
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City",
+            "name": "Roswell",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          }
+        ],
+        "serviceType": [
+          "AI Integration",
+          "Smart Systems",
+          "Predictive Analytics",
+          "Machine Learning Systems",
+          "Intelligent Automation",
+          "AI-Powered Decision Making"
+        ],
+        "priceRange": "$$",
+        "aggregateRating": {
+          "@type": "AggregateRating", 
+          "ratingValue": "4.9",
+          "reviewCount": "27",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      "serviceType": "AI Integration",
+      "category": "Smart Systems & AI",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: #333; background: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header - Match index.html exactly */
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb; position: fixed; top: 0; width: 100%; z-index: 100; transition: all 0.3s ease; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1f2937; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: #2563eb; }
+        .cta-btn { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3); }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+        
+        main { margin-top: 80px; padding: 3rem 0; }
+        .breadcrumb { margin-bottom: 2rem; color: #6b7280; font-size: 0.9rem; }
+        .breadcrumb a { color: #2563eb; text-decoration: none; }
+        
+        .page-hero { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 4rem 0; border-radius: 1rem; margin-bottom: 4rem; }
+        .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .hero-text h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 700; color: #1f2937; margin-bottom: 1.5rem; line-height: 1.2; }
+        .hero-text p { font-size: 1.25rem; color: #6b7280; margin-bottom: 2rem; }
+        .hero-features { list-style: none; }
+        .hero-features li { padding: 0.5rem 0; color: #4b5563; position: relative; padding-left: 2rem; font-weight: 500; }
+        .hero-features li:before { content: "🤖"; position: absolute; left: 0; }
+        
+        .section { margin: 4rem 0; }
+        .section h2 { font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 2rem; text-align: center; }
+        .section h3 { font-size: 1.75rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem 0; }
+        .section p { font-size: 1.1rem; color: #4b5563; margin-bottom: 1.5rem; line-height: 1.7; }
+        
+        .ai-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin: 3rem 0; }
+        .ai-card { background: white; padding: 3rem; border-radius: 1rem; border: 1px solid #e5e7eb; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .ai-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+        .ai-icon { width: 4rem; height: 4rem; background: linear-gradient(135deg, #8b5cf6, #7c3aed); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; font-size: 2rem; color: white; }
+        .ai-card h3 { font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem; }
+        .ai-card p { color: #6b7280; margin-bottom: 1.5rem; }
+        
+        .ai-features { list-style: none; }
+        .ai-features li { padding: 0.5rem 0; color: #4b5563; position: relative; padding-left: 1.5rem; }
+        .ai-features li:before { content: "✓"; color: #8b5cf6; font-weight: bold; position: absolute; left: 0; }
+        
+        .use-cases-section { background: #f8fafc; padding: 4rem 0; border-radius: 1rem; margin: 4rem 0; }
+        .use-cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-top: 3rem; }
+        .use-case { background: white; padding: 3rem; border-radius: 1rem; border-left: 4px solid #8b5cf6; }
+        .use-case-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+        .use-case-icon { width: 3rem; height: 3rem; background: #8b5cf6; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+        .use-case h4 { font-size: 1.25rem; font-weight: 600; color: #1f2937; }
+        .use-case-benefit { background: #f3f4f6; padding: 1rem; border-radius: 0.5rem; margin-top: 1rem; border-left: 3px solid #8b5cf6; }
+        .benefit-label { font-weight: 600; color: #8b5cf6; font-size: 0.9rem; }
+        
+        .implementation-section { background: #f8fafc; padding: 4rem 0; border-radius: 1rem; }
+        .implementation-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .implementation-step { background: white; padding: 2rem; border-radius: 1rem; text-align: center; position: relative; }
+        .implementation-step::after { content: "→"; position: absolute; right: -1rem; top: 50%; transform: translateY(-50%); font-size: 2rem; color: #8b5cf6; font-weight: bold; }
+        .implementation-step:last-child::after { display: none; }
+        .step-icon { width: 3rem; height: 3rem; background: #8b5cf6; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 1rem; }
+        
+        .roi-section { margin: 4rem 0; }
+        .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .roi-item { text-align: center; padding: 2rem; background: white; border-radius: 1rem; border: 1px solid #e5e7eb; }
+        .roi-number { font-size: 3rem; font-weight: 700; color: #8b5cf6; }
+        .roi-label { color: #6b7280; font-weight: 500; }
+        
+        .related-services { background: #f8fafc; padding: 3rem; border-radius: 1rem; margin: 3rem 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .related-item { background: white; padding: 1.5rem; border-radius: 0.75rem; text-align: center; transition: all 0.3s ease; }
+        .related-item:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .related-item a { text-decoration: none; color: #2563eb; font-weight: 600; }
+        
+        .cta-section { background: linear-gradient(135deg, #1f2937, #374151); color: white; padding: 4rem 2rem; border-radius: 1rem; text-align: center; margin: 4rem 0; }
+        .btn-primary { background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block; margin-top: 1rem; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(139, 92, 246, 0.4); }
+        
+        /* Footer - Match index.html exactly */
+        footer { background: #1f2937; color: white; padding: 2rem 0; text-align: center; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section h4 { font-weight: 600; margin-bottom: 1rem; }
+        .footer-section p, .footer-section a { color: #d1d5db; text-decoration: none; transition: color 0.3s ease; }
+        .footer-section a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid #374151; padding-top: 1rem; margin-top: 2rem; color: #9ca3af; }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) { 
+            .nav-links { display: none; } 
+            .mobile-menu-btn { display: block; }
+            .hero-content { grid-template-columns: 1fr; gap: 2rem; }
+            .ai-grid, .use-cases, .implementation-steps, .roi-grid { grid-template-columns: 1fr; }
+            .implementation-step::after { display: none; }
+            h1 { font-size: 2.5rem; }
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Animation classes */
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Fortress 5 Consulting</a>
+            <ul class="nav-links">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#industries">Industries</a></li>
+                <li><a href="/service-areas">Service Areas</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="/#contact" class="cta-btn">Get Started</a>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a> > <a href="/#services">Services</a> > AI Integration & Smart Systems
+            </div>
+
+            <div class="page-hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>AI Integration & Smart Systems</h1>
+                        <p>Leverage cutting-edge artificial intelligence for predictive scheduling, intelligent pricing, automated customer service, and smart decision-making that gives you a competitive edge.</p>
+                        <ul class="hero-features">
+                            <li>Predictive scheduling and demand forecasting</li>
+                            <li>Intelligent dynamic pricing optimization</li>
+                            <li>AI-powered customer service chatbots</li>
+                            <li>Smart resource allocation and routing</li>
+                        </ul>
+                        <a href="/#contact" class="btn-primary">Get Free AI Assessment</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; text-align: center;">
+                            <div style="font-size: 3rem; font-weight: 700; color: #8b5cf6;">35%</div>
+                            <div style="color: #6b7280;">Increase in Efficiency</div>
+                            <div style="font-size: 3rem; font-weight: 700; color: #8b5cf6; margin-top: 1rem;">20%</div>
+                            <div style="color: #6b7280;">Higher Profit Margins</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>AI-Powered Solutions for Contractors</h2>
+                <div class="ai-grid">
+                    <div class="ai-card fade-in">
+                        <div class="ai-icon">📊</div>
+                        <h3>Predictive Analytics</h3>
+                        <p>Use historical data and machine learning to predict demand patterns, optimize scheduling, and prevent equipment failures before they happen.</p>
+                        <ul class="ai-features">
+                            <li>Demand forecasting for optimal staffing</li>
+                            <li>Predictive maintenance alerts</li>
+                            <li>Seasonal trend analysis</li>
+                            <li>Equipment failure prediction</li>
+                            <li>Customer behavior insights</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card fade-in">
+                        <div class="ai-icon">🎯</div>
+                        <h3>Intelligent Pricing</h3>
+                        <p>Dynamic pricing algorithms that adjust quotes based on demand, competition, material costs, and customer value to maximize profitability.</p>
+                        <ul class="ai-features">
+                            <li>Real-time market analysis</li>
+                            <li>Competitor pricing intelligence</li>
+                            <li>Customer value-based pricing</li>
+                            <li>Seasonal demand adjustments</li>
+                            <li>Profit margin optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card fade-in">
+                        <div class="ai-icon">🤖</div>
+                        <h3>AI Customer Service</h3>
+                        <p>Intelligent chatbots and virtual assistants that handle customer inquiries, schedule appointments, and provide support 24/7.</p>
+                        <ul class="ai-features">
+                            <li>24/7 customer inquiry handling</li>
+                            <li>Intelligent appointment scheduling</li>
+                            <li>Service request triage</li>
+                            <li>FAQ automation</li>
+                            <li>Multilingual customer support</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card fade-in">
+                        <div class="ai-icon">🚗</div>
+                        <h3>Smart Operations</h3>
+                        <p>AI-powered route optimization, resource allocation, and workflow automation that adapts to changing conditions in real-time.</p>
+                        <ul class="ai-features">
+                            <li>Dynamic route optimization</li>
+                            <li>Intelligent technician matching</li>
+                            <li>Inventory demand prediction</li>
+                            <li>Workflow optimization</li>
+                            <li>Performance analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="use-cases-section">
+                <div class="container">
+                    <h2>Real-World AI Applications for Contractors</h2>
+                    <div class="use-cases">
+                        <div class="use-case fade-in">
+                            <div class="use-case-header">
+                                <div class="use-case-icon">🔧</div>
+                                <div>
+                                    <h4>HVAC Predictive Maintenance</h4>
+                                </div>
+                            </div>
+                            <p>AI analyzes equipment sensor data to predict when HVAC units will need maintenance, allowing you to proactively schedule service before breakdowns occur.</p>
+                            <div class="use-case-benefit">
+                                <div class="benefit-label">BUSINESS IMPACT:</div>
+                                <p>Reduce emergency calls by 60%, increase customer satisfaction, and generate predictable maintenance revenue.</p>
+                            </div>
+                        </div>
+
+                        <div class="use-case fade-in">
+                            <div class="use-case-header">
+                                <div class="use-case-icon">💰</div>
+                                <div>
+                                    <h4>Dynamic Service Pricing</h4>
+                                </div>
+                            </div>
+                            <p>AI adjusts pricing based on demand, urgency, time of day, and customer history to optimize revenue while remaining competitive.</p>
+                            <div class="use-case-benefit">
+                                <div class="benefit-label">BUSINESS IMPACT:</div>
+                                <p>Increase profit margins by 15-25% while maintaining competitive positioning and customer satisfaction.</p>
+                            </div>
+                        </div>
+
+                        <div class="use-case fade-in">
+                            <div class="use-case-header">
+                                <div class="use-case-icon">📞</div>
+                                <div>
+                                    <h4>Intelligent Call Routing</h4>
+                                </div>
+                            </div>
+                            <p>AI analyzes incoming calls and automatically routes emergency calls to available technicians while scheduling non-urgent requests optimally.</p>
+                            <div class="use-case-benefit">
+                                <div class="benefit-label">BUSINESS IMPACT:</div>
+                                <p>Improve response times by 40% and increase daily capacity by 20% without adding staff.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="implementation-section">
+                <div class="container">
+                    <h2>AI Implementation Process</h2>
+                    <div class="implementation-steps">
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">1</div>
+                            <h3>Data Assessment</h3>
+                            <p>Analyze your existing data and identify AI opportunities</p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">2</div>
+                            <h3>Pilot Program</h3>
+                            <p>Start with high-impact, low-risk AI implementation</p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">3</div>
+                            <h3>Model Training</h3>
+                            <p>Train AI systems on your business-specific data</p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">4</div>
+                            <h3>Full Integration</h3>
+                            <p>Scale successful AI solutions across operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roi-section">
+                <h2>AI Integration Impact & ROI</h2>
+                <div class="roi-grid">
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">35%</div>
+                        <div class="roi-label">Operational Efficiency</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">20%</div>
+                        <div class="roi-label">Profit Margin Increase</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">50%</div>
+                        <div class="roi-label">Faster Decision Making</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">60%</div>
+                        <div class="roi-label">Reduced Manual Tasks</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Why Metro Atlanta Contractors Choose Our AI Solutions</h3>
+                <p>Artificial intelligence isn't just for tech companies anymore. In Metro Atlanta's competitive contracting market, AI gives you the edge needed to optimize pricing, predict customer needs, and operate more efficiently than competitors still relying on manual processes.</p>
+                
+                <p>Our AI solutions are designed specifically for contractors, using industry-specific data models and understanding the unique challenges you face. Whether it's predicting HVAC demand during Atlanta's hot summers or optimizing emergency response routes during rush hour traffic, our AI adapts to your local market conditions.</p>
+
+                <p>We implement AI gradually, starting with high-impact areas that deliver immediate ROI, then expanding to more sophisticated applications as your team becomes comfortable with the technology. This ensures smooth adoption and measurable results from day one.</p>
+            </div>
+
+            <div class="related-services">
+                <h3>Complementary Automation Services</h3>
+                <p>AI integration delivers maximum value when combined with our other automation solutions:</p>
+                <div class="related-grid">
+                    <div class="related-item">
+                        <h4><a href="/project-management-automation/">Project Management</a></h4>
+                        <p>AI-powered project insights</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/business-process-automation/">Process Automation</a></h4>
+                        <p>Smart workflow optimization</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/lead-generation-automation/">Lead Generation</a></h4>
+                        <p>Predictive lead scoring</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/accounting-automation/">Accounting Automation</a></h4>
+                        <p>AI-powered financial insights</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Leverage AI for Your Business?</h2>
+                <p>Join forward-thinking Metro Atlanta contractors who are using artificial intelligence to optimize operations, increase profits, and stay ahead of the competition.</p>
+                <a href="/#contact" class="btn-primary">Schedule Free AI Assessment</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fortress 5 Consulting</h4>
+                    <p>252 Blair Place NW<br>Marietta, GA 30064</p>
+                    <p>Phone: <a href="tel:+1-404-394-8558">(404) 394-8558</a></p>
+                    <p>Email: <a href="mailto:adam@fortress5consulting.com">adam@fortress5consulting.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Automation Services</h4>
+                    <p><a href="/automate-hvac-business/">HVAC Automation</a></p>
+                    <p><a href="/automate-electrical-business/">Electrical Automation</a></p>
+                    <p><a href="/automate-plumbing-business/">Plumbing Automation</a></p>
+                    <p><a href="/quickbooks-automation/">QuickBooks Integration</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <p><a href="/automate-business-marietta-ga/">Marietta</a></p>
+                    <p><a href="/automate-business-kennesaw-ga/">Kennesaw</a></p>
+                    <p><a href="/automate-business-alpharetta-ga/">Alpharetta</a></p>
+                    <p><a href="/service-areas/">All Service Areas</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fortress 5 Consulting. All rights reserved. | Serving Metro Atlanta, Cobb County, Fulton County</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
