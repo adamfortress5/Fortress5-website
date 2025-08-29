@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fortress 5 Consulting serves Metro Atlanta contractors across Marietta, Kennesaw, Alpharetta, Roswell, and surrounding areas with business automation solutions.">
+    <title>Service Areas | Fortress 5 Consulting - Metro Atlanta Business Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e5e7eb;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover, .nav-links a.active {
+            color: #2563eb;
+        }
+        
+        .cta-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4);
+        }
+        
+        /* Main Content */
+        main {
+            padding-top: 100px;
+        }
+        
+        .hero {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+        
+        .areas-section {
+            padding: 4rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .area-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #2563eb;
+        }
+        
+        .area-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .area-card h3 a {
+            color: #1f2937;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .area-card:hover h3 a {
+            color: #2563eb;
+        }
+        
+        .area-card p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .learn-more {
+            color: #2563eb;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .learn-more:hover {
+            color: #1d4ed8;
+        }
+        
+        .learn-more::after {
+            content: " →";
+            transition: transform 0.3s ease;
+        }
+        
+        .area-card:hover .learn-more::after {
+            transform: translateX(3px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            color: #d1d5db;
+        }
+        
+        .footer-content a {
+            color: #d1d5db;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            color: white;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Fortress 5 Consulting</a>
+            <ul class="nav-links">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#industries">Industries</a></li>
+                <li><a href="/service-areas" class="active">Service Areas</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="/#contact" class="cta-btn">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Metro Atlanta Service Areas</h1>
+                <p class="subtitle">Proudly serving contractors throughout Metro Atlanta with custom business automation solutions</p>
+            </div>
+        </section>
+
+        <section class="areas-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>We Serve These Metro Atlanta Areas</h2>
+                    <p>Our business automation experts work with contractors throughout the greater Atlanta metropolitan area</p>
+                </div>
+                
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <h3><a href="/automate-business-marietta-ga/">Marietta, GA</a></h3>
+                        <p>Our home base, serving HVAC, electrical, and plumbing contractors in Marietta with comprehensive automation solutions.</p>
+                        <a href="/automate-business-marietta-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-kennesaw-ga/">Kennesaw, GA</a></h3>
+                        <p>Helping Kennesaw contractors streamline operations and scale their businesses with smart automation systems.</p>
+                        <a href="/automate-business-kennesaw-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-alpharetta-ga/">Alpharetta, GA</a></h3>
+                        <p>Supporting Alpharetta's growing contractor community with cutting-edge business process automation.</p>
+                        <a href="/automate-business-alpharetta-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-roswell-ga/">Roswell, GA</a></h3>
+                        <p>Empowering Roswell contractors with custom workflows and QuickBooks integration solutions.</p>
+                        <a href="/automate-business-roswell-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-woodstock-ga/">Woodstock, GA</a></h3>
+                        <p>Delivering automation excellence to Woodstock contractors across all major trades and services.</p>
+                        <a href="/automate-business-woodstock-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-acworth-ga/">Acworth, GA</a></h3>
+                        <p>Helping Acworth contractors eliminate bottlenecks and focus on growth with tailored automation.</p>
+                        <a href="/automate-business-acworth-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-smyrna-ga/">Smyrna, GA</a></h3>
+                        <p>Transforming how Smyrna contractors manage projects, customers, and finances through automation.</p>
+                        <a href="/automate-business-smyrna-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-sandy-springs-ga/">Sandy Springs, GA</a></h3>
+                        <p>Bringing enterprise-level automation solutions to Sandy Springs contractors of all sizes.</p>
+                        <a href="/automate-business-sandy-springs-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-dunwoody-ga/">Dunwoody, GA</a></h3>
+                        <p>Supporting Dunwoody's contractor community with AI-powered workflows and smart systems.</p>
+                        <a href="/automate-business-dunwoody-ga/" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="area-card">
+                        <h3><a href="/automate-business-johns-creek-ga/">Johns Creek, GA</a></h3>
+                        <p>Helping Johns Creek contractors leverage technology for competitive advantage and growth.</p>
+                        <a href="/automate-business-johns-creek-ga/" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p><strong>Fortress 5 Consulting</strong> | 252 Blair Place NW, Marietta, GA 30064</p>
+                <p>Phone: <a href="tel:+1-404-394-8558">(404) 394-8558</a> | Email: <a href="mailto:adam@fortress5consulting.com">adam@fortress5consulting.com</a></p>
+                <p>&copy; 2025 Fortress 5 Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
