@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automate your plumbing business with emergency dispatch, leak detection monitoring, maintenance scheduling, and customer management systems for Metro Atlanta plumbers.">
+    <title>Automate Your Plumbing Business | Plumbing Contractor Automation | Fortress 5 Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Comprehensive Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Plumbing Contractor Business Automation Solutions",
+      "description": "Comprehensive plumbing contractor automation including emergency dispatch, leak detection monitoring, maintenance scheduling, and customer management for Metro Atlanta plumbing contractors.",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Fortress 5 Consulting",
+        "image": "https://fortress5consulting.com/logo.jpg",
+        "url": "https://fortress5consulting.com",
+        "telephone": "+1-404-394-8558",
+        "email": "adam@fortress5consulting.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "252 Blair Place NW",
+          "addressLocality": "Marietta",
+          "addressRegion": "GA",
+          "postalCode": "30064",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "33.9526",
+          "longitude": "-84.5499"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Marietta",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City", 
+            "name": "Kennesaw",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City",
+            "name": "Alpharetta", 
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City",
+            "name": "Roswell",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          }
+        ],
+        "serviceType": [
+          "Plumbing Contractor Automation",
+          "Plumbing Emergency Dispatch",
+          "Leak Detection Monitoring",
+          "Plumbing Maintenance Scheduling",
+          "Plumbing Customer Management",
+          "Water Damage Prevention Systems"
+        ],
+        "priceRange": "$$",
+        "aggregateRating": {
+          "@type": "AggregateRating", 
+          "ratingValue": "4.9",
+          "reviewCount": "27",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      "serviceType": "Plumbing Contractor Automation",
+      "category": "Plumbing Service Management",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Plumbing Contractors"
+      }
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: #333; background: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header - Match index.html exactly */
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb; position: fixed; top: 0; width: 100%; z-index: 100; transition: all 0.3s ease; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1f2937; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: #2563eb; }
+        .cta-btn { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3); }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+        
+        main { margin-top: 80px; padding: 3rem 0; }
+        .breadcrumb { margin-bottom: 2rem; color: #6b7280; font-size: 0.9rem; }
+        .breadcrumb a { color: #2563eb; text-decoration: none; }
+        
+        .page-hero { background: linear-gradient(135deg, #e0f2fe 0%, #0891b2 100%); padding: 4rem 0; border-radius: 1rem; margin-bottom: 4rem; }
+        .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .hero-text h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 700; color: #1f2937; margin-bottom: 1.5rem; line-height: 1.2; }
+        .hero-text p { font-size: 1.25rem; color: #374151; margin-bottom: 2rem; }
+        .hero-features { list-style: none; }
+        .hero-features li { padding: 0.5rem 0; color: #374151; position: relative; padding-left: 2rem; font-weight: 500; }
+        .hero-features li:before { content: "💧"; position: absolute; left: 0; }
+        
+        .section { margin: 4rem 0; }
+        .section h2 { font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 2rem; text-align: center; }
+        .section h3 { font-size: 1.75rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem 0; }
+        .section p { font-size: 1.1rem; color: #4b5563; margin-bottom: 1.5rem; line-height: 1.7; }
+        
+        .plumbing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin: 3rem 0; }
+        .plumbing-card { background: white; padding: 3rem; border-radius: 1rem; border: 1px solid #e5e7eb; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .plumbing-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+        .plumbing-icon { width: 4rem; height: 4rem; background: linear-gradient(135deg, #0891b2, #0e7490); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; font-size: 2rem; color: white; }
+        .plumbing-card h3 { font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem; }
+        .plumbing-card p { color: #6b7280; margin-bottom: 1.5rem; }
+        
+        .plumbing-features { list-style: none; }
+        .plumbing-features li { padding: 0.5rem 0; color: #4b5563; position: relative; padding-left: 1.5rem; }
+        .plumbing-features li:before { content: "✓"; color: #0891b2; font-weight: bold; position: absolute; left: 0; }
+        
+        .case-study-section { background: #f8fafc; padding: 4rem 0; border-radius: 1rem; margin: 4rem 0; }
+        .case-studies { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-top: 3rem; }
+        .case-study { background: white; padding: 3rem; border-radius: 1rem; border-left: 4px solid #0891b2; }
+        .case-study-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+        .case-study-icon { width: 3rem; height: 3rem; background: #0891b2; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+        .case-study h4 { font-size: 1.25rem; font-weight: 600; color: #1f2937; }
+        .case-study-type { color: #6b7280; font-size: 0.9rem; margin-bottom: 1rem; }
+        .case-study-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 2rem 0; }
+        .stat { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 700; color: #0891b2; }
+        .stat-label { font-size: 0.9rem; color: #6b7280; }
+        
+        .emergency-section { background: linear-gradient(135deg, #fecaca, #dc2626); padding: 4rem 0; border-radius: 1rem; margin: 4rem 0; color: white; }
+        .emergency-content { text-align: center; }
+        .emergency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .emergency-card { background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 1rem; backdrop-filter: blur(10px); }
+        .emergency-icon { font-size: 3rem; margin-bottom: 1rem; }
+        
+        .implementation-section { background: #f8fafc; padding: 4rem 0; border-radius: 1rem; }
+        .implementation-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .implementation-step { background: white; padding: 2rem; border-radius: 1rem; text-align: center; position: relative; }
+        .implementation-step::after { content: "→"; position: absolute; right: -1rem; top: 50%; transform: translateY(-50%); font-size: 2rem; color: #0891b2; font-weight: bold; }
+        .implementation-step:last-child::after { display: none; }
+        .step-icon { width: 3rem; height: 3rem; background: #0891b2; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 1rem; }
+        
+        .roi-section { margin: 4rem 0; }
+        .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .roi-item { text-align: center; padding: 2rem; background: white; border-radius: 1rem; border: 1px solid #e5e7eb; }
+        .roi-number { font-size: 3rem; font-weight: 700; color: #0891b2; }
+        .roi-label { color: #6b7280; font-weight: 500; }
+        
+        .related-services { background: #f8fafc; padding: 3rem; border-radius: 1rem; margin: 3rem 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .related-item { background: white; padding: 1.5rem; border-radius: 0.75rem; text-align: center; transition: all 0.3s ease; }
+        .related-item:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .related-item a { text-decoration: none; color: #2563eb; font-weight: 600; }
+        
+        .cta-section { background: linear-gradient(135deg, #1f2937, #374151); color: white; padding: 4rem 2rem; border-radius: 1rem; text-align: center; margin: 4rem 0; }
+        .btn-primary { background: linear-gradient(135deg, #0891b2, #0e7490); color: white; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block; margin-top: 1rem; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(8, 145, 178, 0.4); }
+        
+        /* Footer - Match index.html exactly */
+        footer { background: #1f2937; color: white; padding: 2rem 0; text-align: center; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section h4 { font-weight: 600; margin-bottom: 1rem; }
+        .footer-section p, .footer-section a { color: #d1d5db; text-decoration: none; transition: color 0.3s ease; }
+        .footer-section a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid #374151; padding-top: 1rem; margin-top: 2rem; color: #9ca3af; }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) { 
+            .nav-links { display: none; } 
+            .mobile-menu-btn { display: block; }
+            .hero-content { grid-template-columns: 1fr; gap: 2rem; }
+            .plumbing-grid, .case-studies, .emergency-grid, .implementation-steps, .roi-grid { grid-template-columns: 1fr; }
+            .implementation-step::after { display: none; }
+            h1 { font-size: 2.5rem; }
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Animation classes */
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Fortress 5 Consulting</a>
+            <ul class="nav-links">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#industries">Industries</a></li>
+                <li><a href="/service-areas">Service Areas</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="/#contact" class="cta-btn">Get Started</a>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Home</a> > <a href="/#industries">Industries</a> > Plumbing Business Automation
+            </div>
+
+            <div class="page-hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Automate Your Plumbing Business</h1>
+                        <p>Transform your plumbing operations with <a href="/business-process-automation/" style="color: #0e7490; text-decoration: none; border-bottom: 1px dotted currentColor;" title="Emergency Dispatch Automation">emergency dispatch automation</a>, <a href="/ai-integration-automation/" style="color: #0e7490; text-decoration: none; border-bottom: 1px dotted currentColor;" title="AI Leak Detection Systems">leak detection monitoring</a>, preventive <a href="/project-management-automation/" style="color: #0e7490; text-decoration: none; border-bottom: 1px dotted currentColor;" title="Maintenance Scheduling Automation">maintenance scheduling</a>, and customer management systems designed for <a href="/service-areas/" style="color: #0e7490; text-decoration: none; border-bottom: 1px dotted currentColor;" title="Metro Atlanta Service Areas">Metro Atlanta plumbers</a>.</p>
+                        <ul class="hero-features">
+                            <li>24/7 emergency plumbing call routing and dispatch</li>
+                            <li>Smart leak detection and water damage prevention</li>
+                            <li>Automated drain cleaning and maintenance schedules</li>
+                            <li>Water heater service monitoring and replacement alerts</li>
+                        </ul>
+                        <a href="/#contact" class="btn-primary">Get Free Plumbing Assessment</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; text-align: center;">
+                            <div style="font-size: 3rem; font-weight: 700; color: #0891b2;">30min</div>
+                            <div style="color: #6b7280;">Average Emergency Response</div>
+                            <div style="font-size: 3rem; font-weight: 700; color: #0891b2; margin-top: 1rem;">80%</div>
+                            <div style="color: #6b7280;">Water Damage Prevention</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Plumbing-Specific Automation Solutions</h2>
+                <div class="plumbing-grid">
+                    <div class="plumbing-card fade-in">
+                        <div class="plumbing-icon">🚨</div>
+                        <h3>Emergency Plumbing Dispatch</h3>
+                        <p>Automatically route emergency calls based on severity, location, and plumber availability. Prioritize burst pipes, sewer backups, and water heater failures.</p>
+                        <ul class="plumbing-features">
+                            <li>24/7 emergency call triage and priority routing</li>
+                            <li>GPS-based nearest plumber dispatch</li>
+                            <li>Water shutoff location tracking and instructions</li>
+                            <li>Emergency equipment and parts coordination</li>
+                            <li>Insurance documentation and photo collection</li>
+                        </ul>
+                    </div>
+
+                    <div class="plumbing-card fade-in">
+                        <div class="plumbing-icon">💧</div>
+                        <h3>Leak Detection & Monitoring</h3>
+                        <p>Deploy IoT sensors and smart monitoring systems to detect leaks early, prevent water damage, and offer proactive maintenance services.</p>
+                        <ul class="plumbing-features">
+                            <li>Smart water leak sensor deployment</li>
+                            <li>Real-time leak detection and customer alerts</li>
+                            <li>Water pressure monitoring and optimization</li>
+                            <li>Automated water shutoff system integration</li>
+                            <li>Preventive leak inspection scheduling</li>
+                        </ul>
+                    </div>
+
+                    <div class="plumbing-card fade-in">
+                        <div class="plumbing-icon">🔧</div>
+                        <h3>Maintenance & Service Automation</h3>
+                        <p>Schedule recurring services like drain cleaning, water heater maintenance, and pipe inspections with automated customer communication.</p>
+                        <ul class="plumbing-features">
+                            <li>Automated drain cleaning service schedules</li>
+                            <li>Water heater maintenance reminder campaigns</li>
+                            <li>Seasonal plumbing inspection programs</li>
+                            <li>Fixture replacement lifecycle tracking</li>
+                            <li>Water quality testing and reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="plumbing-card fade-in">
+                        <div class="plumbing-icon">🏠</div>
+                        <h3>Installation Project Management</h3>
+                        <p>Coordinate complex plumbing installations, remodeling projects, and new construction with automated scheduling and progress tracking.</p>
+                        <ul class="plumbing-features">
+                            <li>Bathroom and kitchen remodel coordination</li>
+                            <li>New construction plumbing phase tracking</li>
+                            <li>Fixture and material delivery scheduling</li>
+                            <li>Permit and inspection management</li>
+                            <li>Customer progress updates and photos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <div class="container">
+                    <h2>Metro Atlanta Plumbing Success Stories</h2>
+                    <div class="case-studies">
+                        <div class="case-study fade-in">
+                            <div class="case-study-header">
+                                <div class="case-study-icon">💧</div>
+                                <div>
+                                    <h4>Atlanta Emergency Plumbing</h4>
+                                    <div class="case-study-type">24/7 Emergency Services - Serving All Metro Atlanta</div>
+                                </div>
+                            </div>
+                            <p>"Our emergency dispatch automation helped us respond to 500+ frozen pipe emergencies during the last winter freeze in under 30 minutes each. Customer satisfaction scores increased 95% because families knew exactly when help was arriving."</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Emergency Responses</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">30min</div>
+                                    <div class="stat-label">Average Response Time</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study fade-in">
+                            <div class="case-study-header">
+                                <div class="case-study-icon">🏢</div>
+                                <div>
+                                    <h4>Marietta Commercial Plumbing</h4>
+                                    <div class="case-study-type">Commercial & Industrial Plumbing - Office Buildings & Restaurants</div>
+                                </div>
+                            </div>
+                            <p>"Leak detection automation prevented $2.3M in water damage across our commercial clients. Smart sensors detect issues before they become disasters, and our maintenance contracts have 98% renewal rates."</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <div class="stat-number">$2.3M</div>
+                                    <div class="stat-label">Damage Prevented</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Contract Renewals</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study fade-in">
+                            <div class="case-study-header">
+                                <div class="case-study-icon">🏠</div>
+                                <div>
+                                    <h4>North Fulton Residential Plumbing</h4>
+                                    <div class="case-study-type">Luxury Residential - Alpharetta & Johns Creek</div>
+                                </div>
+                            </div>
+                            <p>"Remodeling project automation allows us to coordinate 15 luxury bathroom renovations simultaneously. Every project finishes on time with automated material ordering and subcontractor scheduling."</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <div class="stat-number">15</div>
+                                    <div class="stat-label">Concurrent Projects</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">On-Time Completion</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emergency-section">
+                <div class="container">
+                    <div class="emergency-content">
+                        <h2>Master Plumbing Emergencies with Automation</h2>
+                        <p>Metro Atlanta's aging infrastructure and extreme weather create unique plumbing challenges. Our automation ensures rapid response when seconds count.</p>
+                        <div class="emergency-grid">
+                            <div class="emergency-card fade-in">
+                                <div class="emergency-icon">❄️</div>
+                                <h4>Frozen Pipe Emergencies</h4>
+                                <p>Automated winter weather alerts trigger preventive customer outreach and priority emergency response protocols.</p>
+                            </div>
+                            <div class="emergency-card fade-in">
+                                <div class="emergency-icon">🌊</div>
+                                <h4>Flood & Water Damage</h4>
+                                <p>Immediate dispatch coordination with water extraction services and insurance documentation automation.</p>
+                            </div>
+                            <div class="emergency-card fade-in">
+                                <div class="emergency-icon">🔥</div>
+                                <h4>Water Heater Failures</h4>
+                                <p>Same-day replacement inventory tracking and coordination with warranty and financing options.</p>
+                            </div>
+                            <div class="emergency-card fade-in">
+                                <div class="emergency-icon">🚽</div>
+                                <h4>Sewer Line Backups</h4>
+                                <p>Priority routing to certified technicians with hydro-jetting equipment and video inspection capabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="implementation-section">
+                <div class="container">
+                    <h2>Plumbing Automation Implementation</h2>
+                    <div class="implementation-steps">
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">1</div>
+                            <h3>Plumbing Business Analysis</h3>
+                            <p>Assess emergency response patterns, service area coverage, and maintenance opportunities</p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">2</div>
+                            <h3>Emergency Dispatch Setup</h3>
+                            <p>Implement 24/7 emergency routing, priority triage, and rapid response coordination</p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">3</div>
+                            <h3>Monitoring Systems</h3>
+                            <p>Deploy leak detection sensors and preventive maintenance scheduling systems</p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">4</div>
+                            <h3>Project Coordination</h3>
+                            <p>Activate installation project management and customer communication automation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roi-section">
+                <h2>Plumbing Automation Impact & ROI</h2>
+                <div class="roi-grid">
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">30min</div>
+                        <div class="roi-label">Emergency Response Time</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">80%</div>
+                        <div class="roi-label">Water Damage Prevention</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">250%</div>
+                        <div class="roi-label">Maintenance Revenue Growth</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">92%</div>
+                        <div class="roi-label">Customer Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Why Metro Atlanta Plumbers Choose Our Automation</h3>
+                <p>Metro Atlanta's unique plumbing challenges - from <a href="/automate-business-marietta-ga/" style="color: #2563eb; text-decoration: none;" title="Marietta Plumbing Automation Solutions">Marietta's aging cast iron pipes</a> to <a href="/automate-business-alpharetta-ga/" style="color: #2563eb; text-decoration: none;" title="Alpharetta Luxury Plumbing Systems">Alpharetta's luxury home installations</a> - require specialized automation solutions that understand local conditions and customer expectations.</p>
+    
+    <p>We've helped plumbers manage everything from winter freeze emergencies affecting thousands of homes to coordinating complex commercial installations in downtown Atlanta high-rises. Our <a href="/project-management-automation/" style="color: #2563eb; text-decoration: none;" title="Construction Project Coordination">systems adapt to both residential service calls and large-scale construction projects</a>.</p>
+
+    <p>Most importantly, our automation helps you build trust with customers during stressful situations. When someone discovers a burst pipe at 2 AM, they need to know help is coming quickly and professionally. Our <a href="/lead-generation-automation/" style="color: #2563eb; text-decoration: none;" title="Emergency Customer Communication">emergency communication systems</a> ensure every call gets handled with the urgency and care it deserves, while our <a href="/accounting-automation/" style="color: #2563eb; text-decoration: none;" title="Emergency Service Billing">automated billing systems</a> handle the paperwork so you can focus on the emergency.</p>
+</div>
+
+            <div class="related-services">
+                <h3>Complete Plumbing Business Automation Ecosystem</h3>
+    <p>Maximize your plumbing automation ROI with integrated business systems designed specifically for contractors:</p>
+    <div class="related-grid">
+        <div class="related-item">
+            <h4><a href="/project-management-automation/">Project Management</a></h4>
+            <p>Coordinate complex bathroom remodels, new construction plumbing phases, and multi-trade installations</p>
+            <span style="color: #6b7280; font-size: 0.9rem; font-style: italic;">Integrates with emergency dispatch for project delays</span>
+        </div>
+        <div class="related-item">
+            <h4><a href="/accounting-automation/">QuickBooks Integration</a></h4>
+            <p>Automated plumbing invoicing, parts inventory tracking, and emergency service billing with real-time job costing</p>
+            <span style="color: #6b7280; font-size: 0.9rem; font-style: italic;">Perfect for tracking emergency vs. scheduled revenue</span>
+        </div>
+        <div class="related-item">
+            <h4><a href="/lead-generation-automation/">Lead Generation</a></h4>
+            <p>Convert service calls into maintenance agreements and capture emergency service opportunities automatically</p>
+            <span style="color: #6b7280; font-size: 0.9rem; font-style: italic;">Turns one-time emergencies into recurring revenue</span>
+        </div>
+        <div class="related-item">
+            <h4><a href="/ai-integration-automation/">AI & Predictive Systems</a></h4>
+            <p>Predictive leak detection, intelligent maintenance scheduling, and smart parts inventory management</p>
+            <span style="color: #6b7280; font-size: 0.9rem; font-style: italic;">Prevent emergencies before they happen</span>
+        </div>
+    </div>
+</div>
+
+            <div class="cta-section">
+                <h2>Ready to Automate Your Plumbing Business?</h2>
+                <p>Join Metro Atlanta plumbers who have reduced emergency response times, prevented water damage, and built recurring maintenance revenue with our specialized plumbing automation systems.</p>
+                <a href="/#contact" class="btn-primary">Schedule Free Plumbing Assessment</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fortress 5 Consulting</h4>
+                    <p>252 Blair Place NW<br>Marietta, GA 30064</p>
+                    <p>Phone: <a href="tel:+1-404-394-8558">(404) 394-8558</a></p>
+                    <p>Email: <a href="mailto:adam@fortress5consulting.com">adam@fortress5consulting.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Automation Services</h4>
+                    <p><a href="/automate-hvac-business/">HVAC Automation</a></p>
+                    <p><a href="/automate-electrical-business/">Electrical Automation</a></p>
+                    <p><a href="/automate-plumbing-business/">Plumbing Automation</a></p>
+                    <p><a href="/quickbooks-automation/">QuickBooks Integration</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <p><a href="/automate-business-marietta-ga/">Marietta</a></p>
+                    <p><a href="/automate-business-kennesaw-ga/">Kennesaw</a></p>
+                    <p><a href="/automate-business-alpharetta-ga/">Alpharetta</a></p>
+                    <p><a href="/service-areas/">All Service Areas</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fortress 5 Consulting. All rights reserved. | Serving Metro Atlanta, Cobb County, Fulton County</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
