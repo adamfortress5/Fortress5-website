@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automate your general contracting business with project management, subcontractor coordination, permit tracking, and client communication systems for Metro Atlanta general contractors.">
+    <title>Automate Your General Contracting Business | GC Automation Solutions | Fortress 5 Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Comprehensive Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "General Contractor Business Automation Solutions",
+      "description": "Comprehensive general contractor automation including project management, subcontractor coordination, permit tracking, and client communication for Metro Atlanta general contractors and construction companies.",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Fortress 5 Consulting",
+        "image": "https://fortress5consulting.com/logo.jpg",
+        "url": "https://fortress5consulting.com",
+        "telephone": "+1-404-394-8558",
+        "email": "adam@fortress5consulting.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "252 Blair Place NW",
+          "addressLocality": "Marietta",
+          "addressRegion": "GA",
+          "postalCode": "30064",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "33.9526",
+          "longitude": "-84.5499"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Marietta",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City", 
+            "name": "Kennesaw",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City",
+            "name": "Alpharetta", 
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "City",
+            "name": "Roswell",
+            "addressRegion": "GA",
+            "addressCountry": "US"
+          }
+        ],
+        "serviceType": [
+          "General Contractor Automation",
+          "Construction Project Management",
+          "Subcontractor Coordination",
+          "Construction Permit Tracking",
+          "Construction Client Communication",
+          "Construction Progress Tracking"
+        ],
+        "priceRange": "$$",
+        "aggregateRating": {
+          "@type": "AggregateRating", 
+          "ratingValue": "4.9",
+          "reviewCount": "27",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      "serviceType": "General Contractor Automation",
+      "category": "Construction Management",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "General Contractors"
+      }
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: #333; background: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header - Match index.html exactly */
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb; position: fixed; top: 0; width: 100%; z-index: 100; transition: all 0.3s ease; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: #1f2937; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; transition: color 0.3s ease; }
+        .nav-links a:hover { color: #2563eb; }
+        .cta-btn { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3); }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+        
+        main { margin-top: 80px; padding: 3rem 0; }
+        .breadcrumb { margin-bottom: 2rem; color: #6b7280; font-size: 0.9rem; }
+        .breadcrumb a { color: #2563eb; text-decoration: none; }
+        
+        .page-hero { background: linear-gradient(135deg, #fed7aa 0%, #ea580c 100%); padding: 4rem 0; border-radius: 1rem; margin-bottom: 4rem; }
+        .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .hero-text h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 700; color: #1f2937; margin-bottom: 1.5rem; line-height: 1.2; }
+        .hero-text p { font-size: 1.25rem; color: #374151; margin-bottom: 2rem; }
+        .hero-features { list-style: none; }
+        .hero-features li { padding: 0.5rem 0; color: #374151; position: relative; padding-left: 2rem; font-weight: 500; }
+        .hero-features li:before { content: "🏗️"; position: absolute; left: 0; }
+        
+        .section { margin: 4rem 0; }
+        .section h2 { font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 2rem; text-align: center; }
+        .section h3 { font-size: 1.75rem; font-weight: 600; color: #1f2937; margin: 2rem 0 1rem 0; }
+        .section p { font-size: 1.1rem; color: #4b5563; margin-bottom: 1.5rem; line-height: 1.7; }
+        
+        .contractor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin: 3rem 0; }
+        .contractor-card { background: white; padding: 3rem; border-radius: 1rem; border: 1px solid #e5e7eb; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .contractor-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
+        .contractor-icon { width: 4rem; height: 4rem; background: linear-gradient(135deg, #ea580c, #c2410c); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; font-size: 2rem; color: white; }
+        .contractor-card h3 { font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem; }
+        .contractor-card p { color: #6b7280; margin-bottom: 1.5rem; }
+        
+        .contractor-features { list-style: none; }
+        .contractor-features li { padding: 0.5rem 0; color: #4b5563; position: relative; padding-left: 1.5rem; }
+        .contractor-features li:before { content: "✓"; color: #ea580c; font-weight: bold; position: absolute; left: 0; }
+        
+        .case-study-section { background: #f8fafc; padding: 4rem 0; border-radius: 1rem; margin: 4rem 0; }
+        .case-studies { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-top: 3rem; }
+        .case-study { background: white; padding: 3rem; border-radius: 1rem; border-left: 4px solid #ea580c; }
+        .case-study-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+        .case-study-icon { width: 3rem; height: 3rem; background: #ea580c; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+        .case-study h4 { font-size: 1.25rem; font-weight: 600; color: #1f2937; }
+        .case-study-type { color: #6b7280; font-size: 0.9rem; margin-bottom: 1rem; }
+        .case-study-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 2rem 0; }
+        .stat { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 700; color: #ea580c; }
+        .stat-label { font-size: 0.9rem; color: #6b7280; }
+        
+        .project-types-section { background: linear-gradient(135deg, #f3f4f6, #9ca3af); padding: 4rem 0; border-radius: 1rem; margin: 4rem 0; }
+        .project-types-content { text-align: center; }
+        .project-types-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .project-type-card { background: rgba(255, 255, 255, 0.9); padding: 2rem; border-radius: 1rem; }
+        .project-type-icon { font-size: 3rem; margin-bottom: 1rem; }
+        
+        .implementation-section { background: #f8fafc; padding: 4rem 0; border-radius: 1rem; }
+        .implementation-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .implementation-step { background: white; padding: 2rem; border-radius: 1rem; text-align: center; position: relative; }
+        .implementation-step::after { content: "→"; position: absolute; right: -1rem; top: 50%; transform: translateY(-50%); font-size: 2rem; color: #ea580c; font-weight: bold; }
+        .implementation-step:last-child::after { display: none; }
+        .step-icon { width: 3rem; height: 3rem; background: #ea580c; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 1rem; }
+        
+        .roi-section { margin: 4rem 0; }
+        .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .roi-item { text-align: center; padding: 2rem; background: white; border-radius: 1rem; border: 1px solid #e5e7eb; }
+        .roi-number { font-size: 3rem; font-weight: 700; color: #ea580c; }
+        .roi-label { color: #6b7280; font-weight: 500; }
+        
+        .integration-callout { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 3rem; border-radius: 1rem; margin: 3rem 0; text-align: center; }
+        .integration-callout h3 { font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem; }
+        .integration-callout p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; }
+        .integration-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem; }
+        .integration-link { background: rgba(255, 255, 255, 0.2); padding: 1rem; border-radius: 0.5rem; }
+        .integration-link a { color: white; text-decoration: none; font-weight: 600; }
+        .integration-link a:hover { color: #fed7aa; }
+        
+        .location-section { background: #f8fafc; padding: 3rem; border-radius: 1rem; margin: 3rem 0; }
+        .location-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .location-card { background: white; padding: 2rem; border-radius: 0.75rem; text-align: center; }
+        .location-card h4 { font-size: 1.25rem; font-weight: 600; color: #1f2937; margin-bottom: 1rem; }
+        .location-card p { color: #6b7280; margin-bottom: 1rem; }
+        .location-card a { color: #2563eb; text-decoration: none; font-weight: 600; }
+        .location-card a:hover { color: #1d4ed8; }
+        
+        .related-services { background: #f8fafc; padding: 3rem; border-radius: 1rem; margin: 3rem 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .related-item { background: white; padding: 1.5rem; border-radius: 0.75rem; text-align: center; transition: all 0.3s ease; }
+        .related-item:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .related-item a { text-decoration: none; color: #2563eb; font-weight: 600; }
+        
+        .cta-section { background: linear-gradient(135deg, #1f2937, #374151); color: white; padding: 4rem 2rem; border-radius: 1rem; text-align: center; margin: 4rem 0; }
+        .btn-primary { background: linear-gradient(135deg, #ea580c, #c2410c); color: white; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block; margin-top: 1rem; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(234, 88, 12, 0.4); }
+        
+        /* Contextual Link Styles */
+        .contextual-link { color: #2563eb; text-decoration: none; font-weight: 500; border-bottom: 1px solid transparent; transition: all 0.3s ease; }
+        .contextual-link:hover { color: #1d4ed8; border-bottom-color: #2563eb; }
+        
+        /* Footer - Match index.html exactly */
+        footer { background: #1f2937; color: white; padding: 2rem 0; text-align: center; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .footer-section h4 { font-weight: 600; margin-bottom: 1rem; }
+        .footer-section p, .footer-section a { color: #d1d5db; text-decoration: none; transition: color 0.3s ease; }
+        .footer-section a:hover { color: white; }
+        .footer-bottom { border-top: 1px solid #374151; padding-top: 1rem; margin-top: 2rem; color: #9ca3af; }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) { 
+            .nav-links { display: none; } 
+            .mobile-menu-btn { display: block; }
+            .hero-content { grid-template-columns: 1fr; gap: 2rem; }
+            .contractor-grid, .case-studies, .project-types-grid, .implementation-steps, .roi-grid { grid-template-columns: 1fr; }
+            .implementation-step::after { display: none; }
+            h1 { font-size: 2.5rem; }
+        }
+        
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Animation classes */
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Fortress 5 Consulting</a>
+            <ul class="nav-links">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#industries">Industries</a></li>
+                <li><a href="/service-areas">Service Areas</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <a href="/#contact" class="cta-btn">Get Started</a>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/" class="contextual-link">Home</a> > <a href="/#industries" class="contextual-link">Industries</a> > <a href="/automate-contractor-business/" class="contextual-link">General Contractor Automation</a>
+            </div>
+
+            <div class="page-hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Automate Your General Contracting Business</h1>
+                        <p>Streamline complex construction projects with automated subcontractor coordination, permit tracking, client communication, and <a href="/project-management-automation/" class="contextual-link" style="color: #1f2937; font-weight: 600;">project management systems</a> designed for <a href="/service-areas/" class="contextual-link" style="color: #1f2937; font-weight: 600;">Metro Atlanta general contractors</a>.</p>
+                        <ul class="hero-features">
+                            <li>Multi-trade <a href="/business-process-automation/" class="contextual-link" style="color: #374151;">project coordination</a> and scheduling</li>
+                            <li>Subcontractor management and <a href="/ai-integration-automation/" class="contextual-link" style="color: #374151;">automated communication</a></li>
+                            <li>Permit tracking and inspection scheduling</li>
+                            <li>Client progress updates and <a href="/accounting-automation/" class="contextual-link" style="color: #374151;">change order management</a></li>
+                        </ul>
+                        <a href="/#contact" class="btn-primary">Get Free GC Assessment</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div style="background: white; padding: 2rem; border-radius: 1rem; text-align: center;">
+                            <div style="font-size: 3rem; font-weight: 700; color: #ea580c;">35%</div>
+                            <div style="color: #6b7280;">Faster Project Completion</div>
+                            <div style="font-size: 3rem; font-weight: 700; color: #ea580c; margin-top: 1rem;">90%</div>
+                            <div style="color: #6b7280;">On-Time Project Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>General Contractor Automation Solutions</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Our comprehensive <a href="/business-process-automation/" class="contextual-link">business automation systems</a> integrate seamlessly with <a href="/quickbooks-automation/" class="contextual-link">QuickBooks</a> and leverage <a href="/ai-integration-automation/" class="contextual-link">AI technology</a> to streamline every aspect of your general contracting operations.</p>
+                <div class="contractor-grid">
+                    <div class="contractor-card fade-in">
+                        <div class="contractor-icon">👥</div>
+                        <h3>Subcontractor Coordination</h3>
+                        <p>Automate scheduling, communication, and progress tracking across multiple trades with integrated workflows that keep everyone aligned. Perfect complement to our <a href="/project-management-automation/" class="contextual-link">project management automation</a>.</p>
+                        <ul class="contractor-features">
+                            <li>Automated trade scheduling and sequencing</li>
+                            <li>Subcontractor communication and notifications</li>
+                            <li>Progress reporting and milestone tracking</li>
+                            <li>Digital contract management and approvals</li>
+                            <li>Payment scheduling and <a href="/accounting-automation/" class="contextual-link">change order processing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contractor-card fade-in">
+                        <div class="contractor-icon">📋</div>
+                        <h3>Permit & Inspection Management</h3>
+                        <p>Track permits across multiple jurisdictions, schedule inspections automatically, and ensure compliance with local building codes using <a href="/ai-integration-automation/" class="contextual-link">smart automation systems</a>.</p>
+                        <ul class="contractor-features">
+                            <li>Multi-jurisdiction permit application tracking</li>
+                            <li>Automated inspection scheduling and reminders</li>
+                            <li>Building code compliance verification</li>
+                            <li>Document submission and approval tracking</li>
+                            <li>Inspection failure remediation workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="contractor-card fade-in">
+                        <div class="contractor-icon">📊</div>
+                        <h3>Project Progress Tracking</h3>
+                        <p>Monitor multiple projects simultaneously with real-time progress updates, budget tracking, and timeline management integrated with your <a href="/accounting-automation/" class="contextual-link">financial systems</a>.</p>
+                        <ul class="contractor-features">
+                            <li>Real-time project dashboard and reporting</li>
+                            <li>Budget tracking and cost overrun alerts</li>
+                            <li>Timeline management and critical path analysis</li>
+                            <li>Photo documentation and progress galleries</li>
+                            <li>Quality control and punch list management</li>
+                        </ul>
+                    </div>
+
+                    <div class="contractor-card fade-in">
+                        <div class="contractor-icon">💬</div>
+                        <h3>Client Communication</h3>
+                        <p>Keep clients informed with automated progress updates, photo sharing, and transparent communication throughout the project lifecycle. Works seamlessly with <a href="/lead-generation-automation/" class="contextual-link">lead generation systems</a>.</p>
+                        <ul class="contractor-features">
+                            <li>Automated client progress reports</li>
+                            <li>Real-time project photo sharing</li>
+                            <li>Change order approval workflows</li>
+                            <li>Schedule update notifications</li>
+                            <li>Client portal for project transparency</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="integration-callout">
+                <h3>Complete Business Automation Integration</h3>
+                <p>General contractor automation works best when integrated with all your business systems. Our solutions connect seamlessly with your existing workflows and scale as you grow.</p>
+                <div class="integration-links">
+                    <div class="integration-link">
+                        <a href="/quickbooks-automation/">QuickBooks Integration</a>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Financial automation & job costing</p>
+                    </div>
+                    <div class="integration-link">
+                        <a href="/lead-generation-automation/">Lead Generation</a>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Capture & convert more leads</p>
+                    </div>
+                    <div class="integration-link">
+                        <a href="/ai-integration-automation/">AI Integration</a>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Smart scheduling & forecasting</p>
+                    </div>
+                    <div class="integration-link">
+                        <a href="/business-process-automation/">Process Automation</a>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Eliminate manual workflows</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-section">
+                <div class="container">
+                    <h2>Metro Atlanta General Contractor Success Stories</h2>
+                    <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">See how <a href="/automate-business-marietta-ga/" class="contextual-link">Marietta</a>, <a href="/automate-business-kennesaw-ga/" class="contextual-link">Kennesaw</a>, and <a href="/automate-business-alpharetta-ga/" class="contextual-link">Alpharetta</a> general contractors have transformed their operations with our automation solutions.</p>
+                    <div class="case-studies">
+                        <div class="case-study fade-in">
+                            <div class="case-study-header">
+                                <div class="case-study-icon">🏗️</div>
+                                <div>
+                                    <h4>Atlanta Custom Homes</h4>
+                                    <div class="case-study-type">Custom Residential Construction - Luxury Homes in <a href="/automate-business-alpharetta-ga/" class="contextual-link">Alpharetta</a> & Johns Creek</div>
+                                </div>
+                            </div>
+                            <p>"<a href="/business-process-automation/" class="contextual-link">Subcontractor coordination automation</a> allowed us to build 25 custom homes simultaneously. Every trade knows exactly when to start, what's expected, and how to communicate progress. Our <a href="/project-management-automation/" class="contextual-link">project management system</a> integrates with <a href="/accounting-automation/" class="contextual-link">financial tracking</a> for complete visibility."</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <div class="stat-number">25</div>
+                                    <div class="stat-label">Concurrent Projects</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">6 Weeks</div>
+                                    <div class="stat-label">Time Savings</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study fade-in">
+                            <div class="case-study-header">
+                                <div class="case-study-icon">🏢</div>
+                                <div>
+                                    <h4>Metro Commercial Builders</h4>
+                                    <div class="case-study-type">Commercial Construction - Office Buildings & Retail Centers across <a href="/service-areas/" class="contextual-link">Metro Atlanta</a></div>
+                                </div>
+                            </div>
+                            <p>"Permit tracking automation across Cobb, Fulton, and Gwinnett counties eliminated delays. We now complete commercial projects 35% faster with 95% on-time delivery. Our <a href="/ai-integration-automation/" class="contextual-link">AI-powered scheduling</a> optimizes resource allocation automatically."</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <div class="stat-number">35%</div>
+                                    <div class="stat-label">Faster Completion</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">95%</div>
+                                    <div class="stat-label">On-Time Delivery</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study fade-in">
+                            <div class="case-study-header">
+                                <div class="case-study-icon">🔨</div>
+                                <div>
+                                    <h4>Kennesaw Renovation Experts</h4>
+                                    <div class="case-study-type">Home Renovations - Kitchen & Bathroom Remodels in <a href="/automate-business-kennesaw-ga/" class="contextual-link">Kennesaw</a> & Woodstock</div>
+                                </div>
+                            </div>
+                            <p>"<a href="/lead-generation-automation/" class="contextual-link">Client communication automation</a> transformed our reputation. Homeowners receive daily photo updates and progress reports automatically. Our referral rate increased 300% because clients feel informed and valued throughout the renovation."</p>
+                            <div class="case-study-stats">
+                                <div class="stat">
+                                    <div class="stat-number">300%</div>
+                                    <div class="stat-label">Referral Increase</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-types-section">
+                <div class="container">
+                    <div class="project-types-content">
+                        <h2>Automation for Every Construction Project Type</h2>
+                        <p>From residential additions to commercial developments, our <a href="/business-process-automation/" class="contextual-link">automation systems</a> scale to your project complexity and integrate with specialized contractors like <a href="/automate-hvac-business/" class="contextual-link">HVAC</a>, <a href="/automate-electrical-business/" class="contextual-link">electrical</a>, and <a href="/automate-plumbing-business/" class="contextual-link">plumbing</a> teams.</p>
+                        <div class="project-types-grid">
+                            <div class="project-type-card fade-in">
+                                <div class="project-type-icon">🏠</div>
+                                <h4>Custom Homes</h4>
+                                <p>Multi-phase coordination from foundation to final walkthrough with luxury home client expectations. Integrates with <a href="/lead-generation-automation/" class="contextual-link">lead generation</a> for referral tracking.</p>
+                            </div>
+                            <div class="project-type-card fade-in">
+                                <div class="project-type-icon">🏢</div>
+                                <h4>Commercial Buildings</h4>
+                                <p>Complex <a href="/project-management-automation/" class="contextual-link">project management</a> with multiple stakeholders, strict deadlines, and regulatory requirements across <a href="/service-areas/" class="contextual-link">Metro Atlanta</a>.</p>
+                            </div>
+                            <div class="project-type-card fade-in">
+                                <div class="project-type-icon">🔨</div>
+                                <h4>Home Renovations</h4>
+                                <p>Occupied home coordination with minimal disruption and clear communication to homeowners using <a href="/ai-integration-automation/" class="contextual-link">smart scheduling</a>.</p>
+                            </div>
+                            <div class="project-type-card fade-in">
+                                <div class="project-type-icon">🏗️</div>
+                                <h4>Additions & Extensions</h4>
+                                <p>Seamless integration with existing structures while maintaining family living comfort through automated workflow coordination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-section">
+                <h2 style="text-align: center; margin-bottom: 1rem;">Serving Metro Atlanta General Contractors</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Specialized automation solutions for general contractors across Cobb County, Fulton County, and surrounding areas. Each location gets customized workflows for local permitting and regulations.</p>
+                <div class="location-grid">
+                    <div class="location-card fade-in">
+                        <h4>Marietta General Contractors</h4>
+                        <p>Custom automation for Cobb County permitting and local contractor requirements.</p>
+                        <a href="/automate-business-marietta-ga/">Learn About Marietta Solutions →</a>
+                    </div>
+                    <div class="location-card fade-in">
+                        <h4>Kennesaw Construction Companies</h4>
+                        <p>Streamlined workflows for residential and commercial projects in North Cobb.</p>
+                        <a href="/automate-business-kennesaw-ga/">Explore Kennesaw Automation →</a>
+                    </div>
+                    <div class="location-card fade-in">
+                        <h4>Alpharetta Builders</h4>
+                        <p>Luxury home construction automation with high-end client communication systems.</p>
+                        <a href="/automate-business-alpharetta-ga/">Discover Alpharetta Services →</a>
+                    </div>
+                    <div class="location-card fade-in">
+                        <h4>All Metro Atlanta Areas</h4>
+                        <p>Complete coverage across Roswell, Sandy Springs, Smyrna, and surrounding cities.</p>
+                        <a href="/service-areas/">View All Service Areas →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="implementation-section">
+                <div class="container">
+                    <h2>General Contractor Automation Implementation</h2>
+                    <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Our proven implementation process integrates <a href="/project-management-automation/" class="contextual-link">project management</a>, <a href="/accounting-automation/" class="contextual-link">financial systems</a>, and <a href="/lead-generation-automation/" class="contextual-link">client communication</a> for complete business automation.</p>
+                    <div class="implementation-steps">
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">1</div>
+                            <h3>Project Workflow Analysis</h3>
+                            <p>Map current processes, identify bottlenecks, and assess subcontractor coordination challenges with <a href="/business-process-automation/" class="contextual-link">process optimization</a></p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">2</div>
+                            <h3>Subcontractor Integration</h3>
+                            <p>Connect trade partners to unified communication and scheduling platform with <a href="/ai-integration-automation/" class="contextual-link">AI-powered coordination</a></p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">3</div>
+                            <h3>Project Tracking Setup</h3>
+                            <p>Deploy progress monitoring, budget tracking, and timeline management systems integrated with <a href="/quickbooks-automation/" class="contextual-link">QuickBooks</a></p>
+                        </div>
+                        <div class="implementation-step fade-in">
+                            <div class="step-icon">4</div>
+                            <h3>Client Communication Portal</h3>
+                            <p>Activate automated progress reports, photo sharing, and client transparency tools connected to <a href="/lead-generation-automation/" class="contextual-link">referral systems</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roi-section">
+                <h2>General Contractor Automation Impact & ROI</h2>
+                <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem;">See measurable results from <a href="/business-process-automation/" class="contextual-link">comprehensive automation</a> that integrates every aspect of your general contracting business operations.</p>
+                <div class="roi-grid">
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">35%</div>
+                        <div class="roi-label">Faster Project Completion</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">90%</div>
+                        <div class="roi-label">On-Time Delivery Rate</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">50%</div>
+                        <div class="roi-label">Improved Communication</div>
+                    </div>
+                    <div class="roi-item fade-in">
+                        <div class="roi-number">25%</div>
+                        <div class="roi-label">Cost Reduction</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Why Metro Atlanta General Contractors Choose Our Automation</h3>
+                <p><a href="/service-areas/" class="contextual-link">Metro Atlanta's construction market</a> demands excellence - from luxury <a href="/automate-business-alpharetta-ga/" class="contextual-link">Alpharetta custom homes</a> to commercial developments in <a href="/automate-business-marietta-ga/" class="contextual-link">Sandy Springs</a>. Our automation systems help you coordinate complex projects while maintaining the high standards clients expect.</p>
+                
+                <p>We understand the challenges of managing multiple trades across diverse projects. Whether you're coordinating <a href="/automate-hvac-business/" class="contextual-link">HVAC</a>, <a href="/automate-electrical-business/" class="contextual-link">electrical</a>, and <a href="/automate-plumbing-business/" class="contextual-link">plumbing contractors</a> for a new build or managing occupied home renovations where timing is critical, our <a href="/ai-integration-automation/" class="contextual-link">intelligent systems</a> keep everyone connected and accountable.</p>
+
+                <p>Most importantly, our automation helps you build a reputation for reliability and transparency. In a market where referrals drive growth, happy clients become your best marketing asset. Our <a href="/lead-generation-automation/" class="contextual-link">integrated communication systems</a> ensure every client feels informed, valued, and confident in your professionalism, while our <a href="/accounting-automation/" class="contextual-link">financial automation</a> keeps projects profitable.</p>
+            </div>
+
+            <div class="related-services">
+                <h3>Complete General Contractor Business Automation</h3>
+                <p>General contractor automation works best when integrated with comprehensive business systems. Combine our construction-specific workflows with core automation services for maximum efficiency:</p>
+                <div class="related-grid">
+                    <div class="related-item">
+                        <h4><a href="/project-management-automation/">Project Management</a></h4>
+                        <p>Advanced construction project control systems</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/accounting-automation/">Accounting Automation</a></h4>
+                        <p>Construction accounting & job costing integration</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/lead-generation-automation/">Lead Generation</a></h4>
+                        <p>Capture more construction leads & referrals</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/ai-integration-automation/">AI Integration</a></h4>
+                        <p>Smart project scheduling & cost forecasting</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/business-process-automation/">Process Automation</a></h4>
+                        <p>Eliminate manual construction workflows</p>
+                    </div>
+                    <div class="related-item">
+                        <h4><a href="/quickbooks-automation/">QuickBooks Integration</a></h4>
+                        <p>Seamless construction financial management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Automate Your General Contracting Business?</h2>
+                <p>Join <a href="/automate-business-marietta-ga/" style="color: #fed7aa; text-decoration: none;">Metro Atlanta general contractors</a> who have streamlined complex projects, improved client satisfaction, and increased profitability with our specialized construction automation systems that integrate <a href="/project-management-automation/" style="color: #fed7aa; text-decoration: none;">project management</a>, <a href="/accounting-automation/" style="color: #fed7aa; text-decoration: none;">financial tracking</a>, and <a href="/lead-generation-automation/" style="color: #fed7aa; text-decoration: none;">client communication</a>.</p>
+                <a href="/#contact" class="btn-primary">Schedule Free Construction Assessment</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fortress 5 Consulting</h4>
+                    <p>252 Blair Place NW<br>Marietta, GA 30064</p>
+                    <p>Phone: <a href="tel:+1-404-394-8558">(404) 394-8558</a></p>
+                    <p>Email: <a href="mailto:adam@fortress5consulting.com">adam@fortress5consulting.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Automation Services</h4>
+                    <p><a href="/automate-hvac-business/">HVAC Automation</a></p>
+                    <p><a href="/automate-electrical-business/">Electrical Automation</a></p>
+                    <p><a href="/automate-plumbing-business/">Plumbing Automation</a></p>
+                    <p><a href="/quickbooks-automation/">QuickBooks Integration</a></p>
+                    <p><a href="/project-management-automation/">Project Management</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Metro Atlanta Areas</h4>
+                    <p><a href="/automate-business-marietta-ga/">Marietta</a></p>
+                    <p><a href="/automate-business-kennesaw-ga/">Kennesaw</a></p>
+                    <p><a href="/automate-business-alpharetta-ga/">Alpharetta</a></p>
+                    <p><a href="/service-areas/">All Service Areas</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Industries We Serve</h4>
+                    <p><a href="/automate-contractor-business/">General Contractors</a></p>
+                    <p><a href="/automate-flooring-business/">Flooring Specialists</a></p>
+                    <p><a href="/automate-lawn-care-business/">Lawn Care Providers</a></p>
+                    <p><a href="/#industries">All Industries</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fortress 5 Consulting. All rights reserved. | Serving Metro Atlanta, Cobb County, Fulton County</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
