@@ -96,7 +96,8 @@
         /* Header - Match index.html exactly */
         header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb; position: fixed; top: 0; width: 100%; z-index: 100; transition: all 0.3s ease; }
         nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
-        .logo { font-size: 1.5rem; font-weight: 700; color: #1f2937; text-decoration: none; }
+        .logo { display: inline-block; }
+        .logo img { height: 8rem; width: auto; }
         .nav-links { display: flex; list-style: none; gap: 2rem; }
         .nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; transition: color 0.3s ease; }
         .nav-links a:hover { color: #2563eb; }
@@ -190,7 +191,7 @@
 <body>
     <header>
         <nav class="container">
-            <a href="/" class="logo">Fortress 5 Consulting</a>
+            <a href="/" class="logo"><img src="/Fortress+master+logo.png" alt="Fortress 5 Consulting"></a>
             <ul class="nav-links">
                 <li><a href="/#services">Services</a></li>
                 <li><a href="/#industries">Industries</a></li>
