@@ -89,7 +89,7 @@
         header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e5e7eb; position: fixed; top: 0; width: 100%; z-index: 100; transition: all 0.3s ease; }
         nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
         .logo { display: inline-block; }
-        .logo img { height: 8rem; width: auto; }
+        .logo img { height: 5rem; width: auto; }
         .nav-links { display: flex; list-style: none; gap: 2rem; }
         .nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; transition: color 0.3s ease; }
         .nav-links a:hover { color: #2563eb; }
@@ -97,7 +97,7 @@
         .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.4); }
         .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
         
-        main { margin-top: 80px; padding: 3rem 0; }
+        main { margin-top: 100px; padding: 3rem 0; }
         .breadcrumb { margin-bottom: 2rem; color: #6b7280; font-size: 0.9rem; }
         .breadcrumb a { color: #2563eb; text-decoration: none; }
         
@@ -150,7 +150,53 @@
         .footer-bottom { border-top: 1px solid #374151; padding-top: 1rem; margin-top: 2rem; color: #9ca3af; }
         
         /* Mobile responsiveness */
-        @media (max-width: 768px) { 
+        @media (max-width: 768px) {
+    .nav-links { display: none; }
+    
+    .logo img { 
+        height: 3rem;
+    }
+    
+    main {
+        margin-top: 80px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .page-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.25rem;
+    }
+    
+    .services-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .stats-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .cta-section {
+        padding: 2rem 1rem;
+    }
+}
             .nav-links { display: none; } 
             .mobile-menu-btn { display: block; }
             .hero-content { grid-template-columns: 1fr; gap: 2rem; }
