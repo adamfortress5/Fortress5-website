@@ -161,7 +161,53 @@
         .footer-bottom { border-top: 1px solid #374151; padding-top: 1rem; margin-top: 2rem; color: #9ca3af; }
         
         /* Mobile responsiveness */
-        @media (max-width: 768px) { 
+        @media (max-width: 768px) {
+    .nav-links { display: none; }
+    
+    .logo img { 
+        height: 3rem;
+    }
+    
+    main {
+        margin-top: 80px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .page-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.25rem;
+    }
+    
+    .services-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .stats-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .cta-section {
+        padding: 2rem 1rem;
+    }
+}
             .nav-links { display: none; } 
             .mobile-menu-btn { display: block; }
             .automation-grid, .workflow-steps, .roi-grid { grid-template-columns: 1fr; }
